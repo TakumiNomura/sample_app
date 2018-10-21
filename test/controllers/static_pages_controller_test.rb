@@ -4,7 +4,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
   test "should get root" do
     get "/"
-    #assert_routing "/static_pages/home", controller:"static_pages", action: "home"
+    assert_routing "/static_pages/home", controller:"static_pages", action: "home"
     assert_response :success
   end
 
